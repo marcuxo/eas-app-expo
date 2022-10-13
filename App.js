@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Alert, StyleSheet, Text, View } from 'react-native';
 import * as Updates from 'expo-updates'
 import { useEffect, useState } from 'react';
-
+import detalle from './app.json'
 export default function App() {
   const [UpdateCheck, setUpdateCheck] = useState(false)
   
@@ -25,9 +25,11 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text>App Expo EAS Upldate!!</Text>
+      <Text>App Expo EAS Update!!</Text>
       <Text>Powered By Marcuxo</Text>
       <Text>Powered By desert</Text>
+      <Text>Powered By desertantigeno</Text>
+      <Text>version {detalle.expo.version}</Text>
       <StatusBar style="auto" />
     </View>
   );
