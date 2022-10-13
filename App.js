@@ -1,0 +1,43 @@
+import { StatusBar } from 'expo-status-bar';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+import * as Updates from 'expo-updates'
+import { useEffect, useState } from 'react';
+
+export default function App() {
+  const [UpdateCheck, setUpdateCheck] = useState(false)
+  
+  useEffect(() => {
+    reactUpdates();
+  }, [])
+
+  const reactUpdates = async () => {
+    console.log('actualized1')
+    Updates.addListener((event) => {
+      console.log('actualized2',event.type)
+      if (event.type === Updates.UpdateEventType.UPDATE_AVAILABLE) {
+        Alert.alert("Hay Actualizaciones, reinicie la aplicacion");
+        Updates.reloadAsync();
+      }else{
+        Alert.alert("No hay Actualizaciones");
+      }
+    })
+  }
+  
+  return (
+    <View style={styles.container}>
+      <Text>App Expo EAS Upldate!!</Text>
+      <Text>Powered By Marcuxo</Text>
+      <Text>Powered By desert</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
