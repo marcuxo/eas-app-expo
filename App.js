@@ -3,8 +3,8 @@ import { Alert, StyleSheet, Text, View } from 'react-native';
 import * as Updates from 'expo-updates'
 import { useEffect, useState } from 'react';
 import detalle from './app.json'
+
 export default function App() {
-  const [UpdateCheck, setUpdateCheck] = useState(false)
   
   useEffect(() => {
     reactUpdates();
@@ -30,6 +30,7 @@ export default function App() {
       <Text>Powered By desertantigeno</Text>
       <Text>PKG {detalle.expo.android.package}</Text>
       <Text>version {detalle.expo.version}</Text>
+      <Text>Developer marcuXo</Text>
       <StatusBar style="auto" />
     </View>
   );
