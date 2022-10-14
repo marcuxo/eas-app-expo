@@ -11,7 +11,6 @@ export default function App() {
   }, [])
 
   const reactUpdates = async () => {
-    console.log('actualized1')
     Updates.addListener((event) => {
       console.log('actualized2',event.type)
       if (event.type === Updates.UpdateEventType.UPDATE_AVAILABLE) {
@@ -29,6 +28,7 @@ export default function App() {
       <Text>Powered By Marcuxo</Text>
       <Text>Powered By desert</Text>
       <Text>Powered By desertantigeno</Text>
+      <Text>PKG {detalle.expo.android.package}</Text>
       <Text>version {detalle.expo.version}</Text>
       <StatusBar style="auto" />
     </View>
