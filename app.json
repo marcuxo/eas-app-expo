@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-ota-expo",
     "slug": "app-ota-expo",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -12,9 +12,7 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "checkAutomatically": "ON_ERROR_RECOVERY",
-      "fallbackToCacheTimeout": 60000,
-      "url": "https://u.expo.dev/743a3052-05fd-4b88-868e-fdee0ca71e35"
+      "fallbackToCacheTimeout": 60000
     },
     "assetBundlePatterns": [
       "**/*"
@@ -31,7 +29,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "cl.marcuxo.otaexpo",
-      "runtimeVersion": "1.0.2"
+      "runtimeVersion": "1.0.3"
     },
     "web": {
       "favicon": "./assets/favicon.png"
