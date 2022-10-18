@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Alert, StyleSheet, Text, View } from 'react-native';
 import * as Updates from 'expo-updates'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import detalle from './app.json'
 
 export default function App() {
@@ -16,8 +16,6 @@ export default function App() {
       if (event.type === Updates.UpdateEventType.UPDATE_AVAILABLE) {
         Alert.alert("Hay Actualizaciones, reinicie la aplicacion");
         Updates.reloadAsync();
-      }else{
-        Alert.alert("No hay Actualizaciones");
       }
     })
   }
@@ -26,11 +24,12 @@ export default function App() {
     <View style={styles.container}>
       <Text>App Expo EAS Update!!</Text>
       <Text>Powered By Marcuxo</Text>
-      <Text>Powered By desert</Text>
-      <Text>Powered By desertantigeno</Text>
+      <Text>Powered By ai.alien</Text>
       <Text>PKG {detalle.expo.android.package}</Text>
       <Text>version {detalle.expo.version}</Text>
-      <Text>Developer marcuXo</Text>
+      <Text>SDK Expo {detalle.expo.sdkVersion}</Text>
+      <Text>Name App {detalle.expo.name}</Text>
+      <Text>Developer marcuXo😎</Text>
       <StatusBar style="auto" />
     </View>
   );
