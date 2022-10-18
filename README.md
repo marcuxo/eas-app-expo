@@ -43,19 +43,18 @@ go to [https://expo.dev/accounts/mantencion/settings/access-tokens](https://expo
 `create token and copy`
 
 # create repo on git and create Pull Request
-- `create repo an push changes but quit to this commit .github/workflows/update.yml`\
-- `create a new branch and add commit feat: updates`\
-- `now in you repo settings ⚙ go to secrets=>actions and push btn new repository secret`\
-- `and input name EXPO_TOKEN and token the tpken to expo`\
-- `puch changes to this branch add file .github/workflows/update.yml bvefore omited and ejecuting Pull Request`\
-- `this actios produce a error, to solucionte this error execute`\
+- `create repo an push changes but quit to this commit .github/workflows/update.yml`
+- `create a new branch and add commit feat: updates`
+- `now in you repo settings ⚙ go to secrets=>actions and push btn new repository secret`
+- `and input name EXPO_TOKEN and token the tpken to expo`
+- `puch changes to this branch add file .github/workflows/update.yml bvefore omited and ejecuting Pull Request`
+- `this actios produce a error, to solucionte this error execute`
 ```cmd
  yarn
  // this action create a new file yarn.lock
 ```
-`now puch a new commit and the error are reapir`\
-`if PR no have errors, the app is update`\
-
+`now puch a new commit and the error are reapir`
+`if PR no have errors, the app is update`
 
 
 
