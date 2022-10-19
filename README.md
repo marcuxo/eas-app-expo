@@ -6,6 +6,11 @@
   npm install --global eas-cli
 ```
 
+### iniciar eas
+```cmd
+  eas init
+```
+
 ### login with eas
 ```cmd
   eas login
@@ -56,6 +61,10 @@ go to [https://expo.dev/accounts/mantencion/settings/access-tokens](https://expo
 `now puch a new commit and the error are reapir`
 `if PR no have errors, the app is update`
 
+
+```cmd
+  eas update
+```
 
 
 
